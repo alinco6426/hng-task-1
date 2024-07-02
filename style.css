@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+     font-family: 'manrope';
+     padding-inline: 120px;
+     background-color: white;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+header {
+     width: 100%;
+     height: 500px;
+     background-color: rgba(16, 15, 15, 0.098);
+     border-radius: 5px;
+     padding: 20px;
+     margin-top: 30px;
+     display: flex;
+     justify-content: space-between;
+     padding-inline: 40px;
+}
+header .details-container{
+     width: 50%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     justify-items: center;
+}
+.details-container h1 {
+     font-size: 50px;
+     margin-bottom: 20px;
+}
+.details-container h3{
+     font-size: 25px;
+     margin: 10px 0;
+     text-transform: capitalize;
+}
+.details-container h3 span {
+     font-size: 18px;
+     font-weight: 500;
+}
+header .image-displayer-container{
+     width: 50%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.image-displayer-container img{
+     max-width: 100%;
+     height: auto;
+     border-radius: 5px;
+}
+.goals-container-wrapper{
+     width: 100%; 
+     height: auto;
+     margin-top: 100px;
+}
+.goals-container-wrapper h1{
+     text-align: center;
+     font-size: 25px;
+     text-transform: uppercase;
+     margin-bottom: 50px;
+}
+.goals-container{
+     width: 100%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 20px;
+}
+.goals-container li {
+     width: 100%;
+     height: 200px;
+     padding: 20px ;
+     background-color: #000304;
+     border-radius: 5px;
+     list-style: none;
+     color: white;
+}
+li h3{
+     margin: 5px 0;
+     font-size: 18px;
+}
+li p {
+     word-spacing: normal;
+     word-wrap: break-word;
+     font-size: 16px;
+     line-height: 25px;
+}
+
+footer{
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     margin: 50px 0;
+}
+footer a {
+     text-decoration: none;
+     color: black;
+     margin-inline: 20px;
+     font-weight: 600;
+}
+
+/* styles for tablet view  */
+@media screen and (max-width : 1250px)  and (min-width : 760px){
+body{
+     padding-inline: 60px;
+}
+header {
+     flex-direction: column-reverse;
+     height: auto;
+}
+header .details-container {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.details-container h1 {
+     font-size: 40px;
+     text-align: center;
+}
+
+.details-container h3 {
+     font-size: 22px;
+}
+
+.details-container h3 span {
+     font-size: 16px;
+}
+
+header .image-displayer-container {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+}
+
+.image-displayer-container img {
+     max-width: 100%;
+     height: auto;
+}
+.goals-container{
+     width: 100%;
+     grid-template-columns: repeat(1, 1fr);
+}
+.goals-container li {
+     height: auto;
+}
+
+}
+
+
+/* styles for mobile view  */
+@media screen and (max-width : 759px) {
+body{
+     padding-inline: 20px;
+}
+header {
+     flex-direction: column-reverse;
+     height: auto;
+}
+header .details-container {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.details-container h1 {
+     font-size: 40px;
+     text-align: center;
+}
+
+.details-container h3 {
+     font-size: 22px;
+}
+
+.details-container h3 span {
+     font-size: 16px;
+}
+
+header .image-displayer-container {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     position: relative;
+     margin-bottom: 20px;
+}
+
+.image-displayer-container img {
+     max-width: 100%;
+     height: auto;
+     position: static;
+}
+.goals-container{
+     width: 100%;
+     grid-template-columns: repeat(1, 1fr);
+}
+.goals-container li {
+     height: auto;
+}
+footer {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+footer a{
+     margin: 10px 0;
+}
+}
